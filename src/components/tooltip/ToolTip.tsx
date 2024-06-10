@@ -16,7 +16,7 @@ interface ToolTipProps {
   hoverNotHidden?: boolean;
   backgroundColor?: string;
   styles?: React.CSSProperties;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export default function ToolTip({
@@ -28,7 +28,7 @@ export default function ToolTip({
   leaveDelay = 0,
   hoverNotHidden = false,
   styles,
-  children,
+  children = "default",
 }: ToolTipProps) {
   const [showToolTip, setShowToolTip] = useState(false);
   const [isHover, setIsHover] = useState(false);
