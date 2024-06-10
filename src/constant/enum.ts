@@ -1,0 +1,14 @@
+export enum Direction {
+  LEFT = 0,
+  RIGHT,
+  BOTTOM,
+  TOP,
+  TOP_LEFT,
+  TOP_RIGHT,
+  BOTTOM_LEFT,
+  BOTTOM_RIGHT,
+  LEFT_TOP,
+  LEFT_BOTTOM,
+  RIGHT_TOP,
+  RIGHT_BOTTOM,
+}
